@@ -1,0 +1,1 @@
+{$for forend"for""end"endfor$}{$end$}{$= "=" sco_re for_end___ "'''''"$}

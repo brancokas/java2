@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="false">
+
+    <display-name>Treca domaca zadaca</display-name>
+    <description>
+        Aplikacija trece domace zadace
+    </description>
+    
+    <servlet>
+        <servlet-name>colors</servlet-name>
+        <jsp-file>/WEB-INF/pages/colors.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>funny-story</servlet-name>
+        <jsp-file>/stories/funny.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>colors</servlet-name>
+        <url-pattern>/colors</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>funny-story</servlet-name>
+        <url-pattern>/funny-story</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>report</servlet-name>
+        <jsp-file>/WEB-INF/pages/report.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>appinfo</servlet-name>
+        <jsp-file>/WEB-INF/pages/appinfo.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>appinfo</servlet-name>
+        <url-pattern>/appinfo</url-pattern>
+    </servlet-mapping>
+
+ </web-app>

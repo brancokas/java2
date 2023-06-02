@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <style>
+      body {background-color: #{$= "background" "7F7F7F" @tparamGet $};}
+    </style>
+  </head>
+  <body> 
+    <div><a href="../../scripts/osnovni.smscr">Osnovna stranica</a></div>
+    <div><a href="../../scripts/brojPoziva.smscr">Broj poziva</a></div>
+    <div><a href="http://localhost:5721/scripts/fibonaccih.smscr">Fibonaccijevi brojevi</a></div>
+    <div><a href="http://localhost:5721/hello">Hello</a></div>
+    <div><a href="http://localhost:5721/cw">Krug</a></div>
+    <div><p>Unesite parametre za izracun brojeva:</p></div>
+    <form action="http://localhost:5721/calc" method="get">
+        <input type="number" id="a" name="a"><br><br>
+        <input type="number" id="b" name="b"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div><p>Odaberite boju stranice:</p></div>
+    <form action="http://localhost:5721/setbgcolor">
+        <label for="colors">Izaberite boju:</label>
+        <select name="bgcolor">
+            <option value="ffffff">Bijela</option>
+            <option value="0000ff">Plava</option>
+            <option value="ff0000">Crvena</option>
+            <option value="00ff00">Zelena</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

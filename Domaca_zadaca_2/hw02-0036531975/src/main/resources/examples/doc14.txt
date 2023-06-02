@@ -1,0 +1,2 @@
+ovo je neki tekst da i to probamo
+{for i a b c}{$for i a b c$}

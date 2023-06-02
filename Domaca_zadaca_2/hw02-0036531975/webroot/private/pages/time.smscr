@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <style>
+            body { background-image: url('{$= "imgName" "" @tparamGet $}');}
+        </style>
+    </head>
+    <body>
+        <p>Vrijeme je: {$= "time" "0" @tparamGet $}</p>
+        <form action="http://localhost:8000/setbackground">
+            <label for="image">Izaberite sliku:</label>
+            <select name="bgImage">
+                <option value="poz.png">Senica</option>
+                <option value="neg.png">Pasulj</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

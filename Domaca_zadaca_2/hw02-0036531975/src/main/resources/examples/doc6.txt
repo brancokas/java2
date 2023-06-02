@@ -1,0 +1,1 @@
+{$for @sin 12end@sin $}{$end$}

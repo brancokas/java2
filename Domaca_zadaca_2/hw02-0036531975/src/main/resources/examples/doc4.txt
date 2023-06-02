@@ -1,0 +1,1 @@
+{$for foric afor bfor$}\{$for end = """\\ for$}{$end$}
